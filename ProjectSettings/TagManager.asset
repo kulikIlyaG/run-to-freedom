@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Obstacle
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Dirt
+  - Player
+  - PlayerColliders
+  - InteractableColliders
+  - Ragdoll
+  - Wood
+  - Parallax
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: MainBackground
+    uniqueID: 608162615
+    locked: 0
+  - name: Back_02
+    uniqueID: 2570148599
+    locked: 0
+  - name: Back_01
+    uniqueID: 2448987833
+    locked: 0
+  - name: Back_00
+    uniqueID: 4194083453
+    locked: 0
+  - name: Ground
+    uniqueID: 4070249489
+    locked: 0
+  - name: Player
+    uniqueID: 817261231
+    locked: 0
+  - name: Obstacles
+    uniqueID: 3119642787
+    locked: 0
+  - name: FrontOfCamera
+    uniqueID: 916020515
+    locked: 0

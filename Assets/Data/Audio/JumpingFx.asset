@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7208152909e542e29a4ddac1c75a4abe, type: 3}
+  m_Name: JumpingFx
+  m_EditorClassIdentifier: 
+  _clips:
+  - {fileID: 8300000, guid: 04c0ec17d73a94c669a67cf69ab00c71, type: 3}
+  - {fileID: 8300000, guid: 306bc7c744ad94ce38af4a795097eae4, type: 3}
+  - {fileID: 8300000, guid: 3ce5e9a7eec004392b67c2ef7a4dc7f0, type: 3}
+  _volume: 0.7
