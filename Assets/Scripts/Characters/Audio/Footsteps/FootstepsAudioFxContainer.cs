@@ -10,6 +10,8 @@ namespace Characters.Audio
         
         [SerializeField] private AudioClip[] _landingAndJumpingFx;
 
+        // история и индексами не приятна. сделал так-как самый быстрый варик просто для демо
+        //в этом классе можно ничего не искать) просто быстрая имплементация интерфейса 
         private int previouslyRandomIndexForRegular;
         IAudioFX IFootstepsAudioClipsContainer.PeakRegularFootstepFx()
         {

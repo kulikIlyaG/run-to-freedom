@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Zenject;
 
+/// <summary>
+/// Ребят этот класс был создан мной за 5 мин просто для того что б на демке был нужный вам инф о позиции кнопки рестарта
+/// если б не эта кнопка никакого UI не было б в проекте.
+/// </summary>
 public class GameScreen : MonoBehaviour
 {
     [SerializeField] private MaskableGraphic _mainPanel;
