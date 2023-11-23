@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8400f0edc9a84509ad03e3bbb7d5f60d, type: 3}
+  m_Name: FieldBiome
+  m_EditorClassIdentifier: 
+  _chunksContainers:
+  - _chunks:
+    - {fileID: 4436417462619781070, guid: 3b6411a7fd21c457aa8b224edef9a770, type: 3}
+    activeIndexesRange: 1
+  - _chunks:
+    - {fileID: 4436417462619781070, guid: 7769b0f8a6b2b401ba6532312d2e2998, type: 3}
+    - {fileID: 4436417462619781070, guid: 0f8873c3eef684ea3829d826a8e14f99, type: 3}
+    activeIndexesRange: 2
+  - _chunks:
+    - {fileID: 4436417462619781070, guid: f4a222ac8b7bf43d2a6f2d6cba52ad3f, type: 3}
+    - {fileID: 4436417462619781070, guid: 9cb1c31b420a04b57a1963db87375623, type: 3}
+    activeIndexesRange: 5
+  - _chunks:
+    - {fileID: 4436417462619781070, guid: 98496116ad86d47b394f07408f995f1d, type: 3}
+    activeIndexesRange: 6
+  - _chunks:
+    - {fileID: 4436417462619781070, guid: f4a222ac8b7bf43d2a6f2d6cba52ad3f, type: 3}
+    - {fileID: 4436417462619781070, guid: 7769b0f8a6b2b401ba6532312d2e2998, type: 3}
+    - {fileID: 4436417462619781070, guid: 9cb1c31b420a04b57a1963db87375623, type: 3}
+    - {fileID: 4436417462619781070, guid: f14adf9cf4bbb409bbfda31f30fb66da, type: 3}
+    activeIndexesRange: 8
+  - _chunks:
+    - {fileID: 4436417462619781070, guid: a28519c1f144442e9868da1485b4d368, type: 3}
+    activeIndexesRange: 9
+  - _chunks:
+    - {fileID: 4436417462619781070, guid: f4a222ac8b7bf43d2a6f2d6cba52ad3f, type: 3}
+    - {fileID: 4436417462619781070, guid: 7769b0f8a6b2b401ba6532312d2e2998, type: 3}
+    - {fileID: 4436417462619781070, guid: 9cb1c31b420a04b57a1963db87375623, type: 3}
+    - {fileID: 4436417462619781070, guid: f14adf9cf4bbb409bbfda31f30fb66da, type: 3}
+    activeIndexesRange: 100
+  _backgrounds:
+  - {fileID: 1542615687587288338, guid: cd6dc06cd21ec4443b35de1c8a84e7b7, type: 3}
+  - {fileID: 1542615687587288338, guid: cd6dc06cd21ec4443b35de1c8a84e7b7, type: 3}
+  - {fileID: 1542615687587288338, guid: cd6dc06cd21ec4443b35de1c8a84e7b7, type: 3}
+  - {fileID: 1542615687587288338, guid: cd6dc06cd21ec4443b35de1c8a84e7b7, type: 3}
+  - {fileID: 3546388526041803898, guid: 51c9aea0e01004e2a99fb28af2b75c88, type: 3}
+  _audioAmbient:
+  - {fileID: 11400000, guid: a8a7d309e15c94bcf8cd34d98e54074e, type: 2}
+  - {fileID: 11400000, guid: 688116caf6e504e35a41a87777dc99fe, type: 2}

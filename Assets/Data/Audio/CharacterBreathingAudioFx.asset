@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7836040003854a04a2163a0f65673d28, type: 3}
+  m_Name: CharacterBreathingAudioFx
+  m_EditorClassIdentifier: 
+  _clipsBreathUpRate:
+  - {fileID: 8300000, guid: 265188f73c77345b5986eeaf4cdb9449, type: 3}
+  - {fileID: 8300000, guid: ec8345cd1cda94211a63952069b9400f, type: 3}
+  _clipsBreathDownRate:
+  - {fileID: 8300000, guid: d1e7bee7bbc3d407c994fc086ec48eee, type: 3}
+  - {fileID: 8300000, guid: d1f86362882574cffb6cca25354478df, type: 3}
+  _clipsBreathWeakRate:
+  - {fileID: 8300000, guid: 80305b411e7b34d18a233a22298839bd, type: 3}
+  - {fileID: 8300000, guid: 255661b5eea1b45639ad59be25deba9a, type: 3}
