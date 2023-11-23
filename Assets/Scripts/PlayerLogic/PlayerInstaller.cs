@@ -24,15 +24,15 @@ namespace PlayerLogic
             _injectedCharacterModel = model;
         }
 
-        protected override void BindCharacterEntity()
-        {
-            Container.BindInterfacesAndSelfTo<Player>().FromNew().AsSingle().WithArguments(_playerModel).NonLazy();
-        }
-
         public override void InstallBindings()
         {
             base.InstallBindings();
             BindingFlyingOnWings();
+        }
+
+        protected override void BindCharacterEntity()
+        {
+            Container.BindInterfacesAndSelfTo<Player>().FromNew().AsSingle().WithArguments(_playerModel).NonLazy();
         }
 
         private void BindingFlyingOnWings()
