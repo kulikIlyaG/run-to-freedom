@@ -2,6 +2,9 @@ using UnityEngine;
 
 namespace Components.Physics2DExtensions
 {
+    /// <summary>
+    /// Игнор коллизий используется в рэгдоле
+    /// </summary>
     public class CollisionsIgnoreList : MonoBehaviour
     {
         [SerializeField] private Collider2D[] _listA;

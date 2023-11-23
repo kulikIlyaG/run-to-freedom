@@ -6,6 +6,13 @@ using Zenject;
 
 namespace Root.Audio
 {
+    /// <summary>
+    /// Небольшой пул на аудио проигрыватели
+    /// Есть активные и нет
+    /// не активные если есть переиспользуются по запросу
+    /// а если нет делаются новые по завершению их работы если лимит не превышен попадают в список не активных, иначе удаляются
+    /// </summary>
+    /// <typeparam name="TRaiser">Конкретный тип источника звука</typeparam>
     public class AudioRaisersPool<TRaiser> : IAudioRaisersPool where TRaiser : AudioRaiserComponent
     {
         private readonly int _countMaxRaisersInactiveInstances;

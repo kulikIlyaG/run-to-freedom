@@ -1,5 +1,4 @@
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
+//этот шейдер имитация тумана по вертекали. простой градиент цвета от мировых позиций по y
 Shader "Custom/AltitudeFog"
 {
     Properties 
