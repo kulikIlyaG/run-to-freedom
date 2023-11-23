@@ -1,6 +1,4 @@
 using System;
-using Characters.Jump;
-using Characters.Somersault;
 using UnityEngine;
 using Zenject;
 
