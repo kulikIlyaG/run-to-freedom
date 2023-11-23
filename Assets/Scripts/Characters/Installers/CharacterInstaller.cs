@@ -48,13 +48,40 @@ namespace Characters.Installers
         public override void InstallBindings()
         {
             BindCharacterEntity();
-
-            Container.Bind<ICharacterInputsModelReadOnly>().To<CharacterInputsModel>().FromNew().AsSingle().NonLazy();
+            BindStats();
+            BindPhysics();
+            BindAudio();
+            BindAnimation();
             
-            Container.BindInterfacesTo<AdditionalDownForceByAddForce>().FromNew().AsSingle().NonLazy();
+            BindMovement();
+            BindJumping();
+            BindSomersault();
+
+            Container.BindInterfacesTo<CharacterParticles>().FromNew().AsSingle().
+                WithArguments(_leftFootGroundSplash, _rightFootGroundSplash).NonLazy();
+            Container.BindInterfacesTo<CharacterInputsModel>().FromNew().AsSingle().NonLazy();
+        }
+
+        protected virtual void BindCharacterEntity()
+        {
+            Container.BindInterfacesAndSelfTo<Character>().FromNew().AsSingle().WithArguments(_injectedCharacterModel ?? _testingCharacterModel).NonLazy();
+        }
+
+        protected virtual  void BindStats()
+        {
+            Container.BindInterfacesTo<DamageExecutor>().FromNew().AsSingle().
+                WithArguments(new HitBoxParameters(_hitBoxCollider.size.y, _notHitZonePercent, _legsPercentHeight, _bodyPercentHeight, _rigidbody.transform)).NonLazy();
+            Container.BindInterfacesTo<Health>().FromNew().AsSingle().NonLazy();
+        }
+
+        protected virtual void BindPhysics()
+        {
             Container.BindInterfacesTo<CharacterPhysicsRigidbody2D>().FromNew().AsSingle()
                 .WithArguments(_rigidbody).NonLazy();
             Container.BindInterfacesTo<GroundedStateUpdater>().FromInstance(_groundedStateUpdater).AsSingle().NonLazy();
+            
+            Container.BindInterfacesTo<AdditionalDownForceByAddForce>().FromNew().AsSingle().NonLazy();
+            
             Container.Bind<IHitBoxCollider>().To<HitBoxColliderController>().FromNew().AsSingle()
                 .WithArguments(_mainHitBoxCollider).NonLazy();
             
@@ -64,22 +91,6 @@ namespace Characters.Installers
             
             Container.BindInterfacesTo<RagdollController>().FromNew().AsSingle().
                 WithArguments(_ragdollSkeleton, _ragdollParameters).NonLazy();
-
-            
-            Container.BindInterfacesTo<AnimatorEvents>().FromInstance(_animatorEvents).AsSingle().NonLazy();
-            Container.BindInterfacesTo<AnimationByAnimator>().FromNew().AsSingle().WithArguments(_animator).NonLazy();
-            
-            Container.BindInterfacesTo<CharacterParticles>().FromNew().AsSingle().
-                WithArguments(_leftFootGroundSplash, _rightFootGroundSplash).NonLazy();
-            
-            Container.BindInterfacesTo<DamageExecutor>().FromNew().AsSingle().
-                WithArguments(new HitBoxParameters(_hitBoxCollider.size.y, _notHitZonePercent, _legsPercentHeight, _bodyPercentHeight, _rigidbody.transform)).NonLazy();
-            Container.BindInterfacesTo<Health>().FromNew().AsSingle().NonLazy();
-            
-            BindMovement();
-            BindJumping();
-            BindSomersault();
-            BindAudio();
         }
 
         protected virtual void BindAudio()
@@ -89,6 +100,12 @@ namespace Characters.Installers
                 .WithArguments(_footstepsFx).NonLazy();
 
             Container.BindInterfacesTo<CharacterBreathingAudio>().FromNew().AsSingle().WithArguments(_breathingFx).NonLazy();
+        }
+
+        protected virtual void BindAnimation()
+        {
+            Container.BindInterfacesTo<AnimatorEvents>().FromInstance(_animatorEvents).AsSingle().NonLazy();
+            Container.BindInterfacesTo<AnimationByAnimator>().FromNew().AsSingle().WithArguments(_animator).NonLazy();
         }
 
         private void BindSomersault()
@@ -124,11 +141,6 @@ namespace Characters.Installers
 
             Container.Bind<IMovementAvailableChecker>().To<MovementAvailableChecker>().FromNew().AsSingle().NonLazy();
             Container.BindInterfacesTo<CharacterMovement>().FromNew().AsSingle().NonLazy();
-        }
-
-        protected virtual void BindCharacterEntity()
-        {
-            Container.BindInterfacesAndSelfTo<Character>().FromNew().AsSingle().WithArguments(_injectedCharacterModel ?? _testingCharacterModel).NonLazy();
         }
 
 
