@@ -7,17 +7,20 @@ namespace Characters.Jump
 {
     public class JumpAvailableChecker : IJumpAvailableChecker
     {
-        [Inject] private readonly IGroundCheck _groundCheck;
+        private readonly DiContainer _container;
+        private readonly IGroundCheck _groundCheck;
 
-        [InjectOptional] private readonly ICharacterSomersault _somersault;
-        [InjectOptional] private readonly IFlying _flying;
-
+        public JumpAvailableChecker(DiContainer container, IGroundCheck groundCheck)
+        {
+            _container = container;
+            _groundCheck = groundCheck;
+        }
 
         bool IJumpAvailableChecker.ICanJump()
         {
             return _groundCheck.IsGrounded
-                   && _somersault is {IsSomersaultNow: false}
-                   && _flying is {IsEnabled: false};
+                   && _container.Resolve<ICharacterSomersault>() is {IsSomersaultNow: false}
+                   && _container.Resolve<IFlying>() is {IsEnabled: false};
         }
     }
 }
