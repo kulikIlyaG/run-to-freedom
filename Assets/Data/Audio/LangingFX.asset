@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: LangingFX
   m_EditorClassIdentifier: 
   _clips:
-  - {fileID: 8300000, guid: 3c02a4ceb00484f829afb5cb427e8341, type: 3}
+  - {fileID: 8300000, guid: 5865f506aac1c4795812a9334a4b78c1, type: 3}
+  - {fileID: 8300000, guid: aa30552918de54f92ad4b9296dc1ff00, type: 3}
   _volume: 0.7

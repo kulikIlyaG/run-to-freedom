@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: CharacterBreathingAudioFx
   m_EditorClassIdentifier: 
   _clipsBreathUpRate:
-  - {fileID: 8300000, guid: 8c4353a636bd54bd5a84d5708b6b8387, type: 3}
-  - {fileID: 8300000, guid: c11f759aa826f4777b78ca04d804b14d, type: 3}
+  - {fileID: 8300000, guid: 265188f73c77345b5986eeaf4cdb9449, type: 3}
+  - {fileID: 8300000, guid: ec8345cd1cda94211a63952069b9400f, type: 3}
   _clipsBreathDownRate:
-  - {fileID: 8300000, guid: 50791c38d90cc45248b96bb7891f9264, type: 3}
-  - {fileID: 8300000, guid: 93d422d672edc41278dc3d75f82e9f7d, type: 3}
+  - {fileID: 8300000, guid: d1e7bee7bbc3d407c994fc086ec48eee, type: 3}
+  - {fileID: 8300000, guid: d1f86362882574cffb6cca25354478df, type: 3}
   _clipsBreathWeakRate:
-  - {fileID: 8300000, guid: b99802b700b6d4090a9538effd4a053b, type: 3}
-  - {fileID: 8300000, guid: 804962e6e8a7043c9b0226c94ac67308, type: 3}
-  - {fileID: 8300000, guid: 550c88678bf3e4cbf8817beb293ff96f, type: 3}
+  - {fileID: 8300000, guid: 80305b411e7b34d18a233a22298839bd, type: 3}
+  - {fileID: 8300000, guid: 255661b5eea1b45639ad59be25deba9a, type: 3}

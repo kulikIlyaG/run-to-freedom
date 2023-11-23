@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: JumpingFx
   m_EditorClassIdentifier: 
   _clips:
-  - {fileID: 8300000, guid: 04c0ec17d73a94c669a67cf69ab00c71, type: 3}
-  - {fileID: 8300000, guid: 306bc7c744ad94ce38af4a795097eae4, type: 3}
-  - {fileID: 8300000, guid: 3ce5e9a7eec004392b67c2ef7a4dc7f0, type: 3}
+  - {fileID: 8300000, guid: a298d4b47ab7f4f0c828bea73b693646, type: 3}
+  - {fileID: 8300000, guid: 1a22d76285cbd4e828d9ffb851506d9d, type: 3}
+  - {fileID: 8300000, guid: e71b87df6c2764e0dbee74b0f847f381, type: 3}
   _volume: 0.7
